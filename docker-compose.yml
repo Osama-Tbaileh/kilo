@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: github-insights-db
+    environment:
+      POSTGRES_DB: github_insights
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./server/database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - github-insights-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: github-insights-redis
+    ports:
+      - "6378:6378"
+    volumes:
+      - redis_data:/data
+    networks:
+      - github-insights-network
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: github-insights-server
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=github_insights
+      - DB_USER=postgres
+      - DB_PASSWORD=password
+      - REDIS_HOST=redis
+      - REDIS_PORT=6378
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    networks:
+      - github-insights-network
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: github-insights-client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    networks:
+      - github-insights-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  github-insights-network:
+    driver: bridge

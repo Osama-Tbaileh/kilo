@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug GitHub Sync</title>
+</head>
+<body>
+    <h1>GitHub Sync Debug Tool</h1>
+    
+    <div>
+        <label>Auth Token:</label>
+        <input type="text" id="token" placeholder="Paste your auth_token here" style="width: 400px;">
+    </div>
+    
+    <div>
+        <label>Repository ID:</label>
+        <input type="number" id="repoId" value="1" placeholder="Repository ID">
+    </div>
+    
+    <br>
+    
+    <button onclick="checkGitHub()">1. Check GitHub Data</button>
+    <button onclick="syncRepository()">2. Manual Sync</button>
+    <button onclick="checkDatabase()">3. Check Database</button>
+    
+    <br><br>
+    
+    <div id="results" style="background: #f0f0f0; padding: 10px; white-space: pre-wrap; font-family: monospace;"></div>
+
+    <script>
+        function getToken() {
+            return document.getElementById('token').value || localStorage.getItem('auth_token');
+        }
+        
+        function getRepoId() {
+            return document.getElementById('repoId').value;
+        }
+        
+        function log(message) {
+            document.getElementById('results').textContent += message + '\n\n';
+        }
+        
+        async function checkGitHub() {
+            log('=== CHECKING GITHUB DATA ===');
+            try {
+                const response = await fetch(`http://localhost:5000/api/debug/github-check/${getRepoId()}`, {
+                    headers: {
+                        'Authorization': `Bearer ${getToken()}`
+                    }
+                });
+                const data = await response.json();
+                log('GitHub Check Result: ' + JSON.stringify(data, null, 2));
+            } catch (error) {
+                log('Error: ' + error.message);
+            }
+        }
+        
+        async function syncRepository() {
+            log('=== TRIGGERING MANUAL SYNC ===');
+            try {
+                const response = await fetch(`http://localhost:5000/api/debug/sync-repository/${getRepoId()}`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${getToken()}`,
+                        'Content-Type': 'application/json'
+                    }
+                });
+                const data = await response.json();
+                log('Sync Result: ' + JSON.stringify(data, null, 2));
+            } catch (error) {
+                log('Error: ' + error.message);
+            }
+        }
+        
+        async function checkDatabase() {
+            log('=== CHECKING DATABASE ===');
+            try {
+                const response = await fetch(`http://localhost:5000/api/debug/repository/${getRepoId()}`, {
+                    headers: {
+                        'Authorization': `Bearer ${getToken()}`
+                    }
+                });
+                const data = await response.json();
+                log('Database Check Result: ' + JSON.stringify(data, null, 2));
+            } catch (error) {
+                log('Error: ' + error.message);
+            }
+        }
+        
+        // Auto-fill token from localStorage
+        window.onload = function() {
+            const token = localStorage.getItem('auth_token');
+            if (token) {
+                document.getElementById('token').value = token;
+            }
+        }
+    </script>
+</body>
+</html>

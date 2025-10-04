@@ -1,0 +1,196 @@
+2025-08-22 19:05:36:536 [31merror[39m: [31muncaughtException: Dialect needs to be explicitly supplied as of v4.0.0[39m
+[31mError: Dialect needs to be explicitly supplied as of v4.0.0[39m
+[31m    at new Sequelize (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\node_modules\sequelize\lib\sequelize.js:136:13)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\models\index.js:4:19)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1895:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1465:32)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1282:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+2025-08-22 19:37:51:3751 [31merror[39m: [31muncaughtException: Dialect needs to be explicitly supplied as of v4.0.0[39m
+[31mError: Dialect needs to be explicitly supplied as of v4.0.0[39m
+[31m    at new Sequelize (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\node_modules\sequelize\lib\sequelize.js:136:13)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\models\index.js:4:19)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1895:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1465:32)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1282:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+2025-08-22 20:25:01:251 [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::5000[39m
+[31mError: listen EADDRINUSE: address already in use :::5000[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[31m    at listenInCluster (node:net:1996:12)[39m
+[31m    at Server.listen (node:net:2101:7)[39m
+[31m    at startServer (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:226:12)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-08-25 20:24:22:2422 [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::5000[39m
+[31mError: listen EADDRINUSE: address already in use :::5000[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[31m    at listenInCluster (node:net:1996:12)[39m
+[31m    at Server.listen (node:net:2101:7)[39m
+[31m    at startServer (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:226:12)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-08-29 11:12:08:128 [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::5000[39m
+[31mError: listen EADDRINUSE: address already in use :::5000[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[31m    at listenInCluster (node:net:1996:12)[39m
+[31m    at Server.listen (node:net:2101:7)[39m
+[31m    at startServer (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:234:12)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-08-29 11:12:28:1228 [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::5000[39m
+[31mError: listen EADDRINUSE: address already in use :::5000[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[31m    at listenInCluster (node:net:1996:12)[39m
+[31m    at Server.listen (node:net:2101:7)[39m
+[31m    at startServer (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:234:12)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-09 11:08:05:85 [31merror[39m: [31muncaughtException: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31mError: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31m    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1211:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:22:34)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
+2025-09-09 11:08:18:818 [31merror[39m: [31muncaughtException: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31mError: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31m    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1211:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:22:34)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
+2025-09-09 11:08:41:841 [31merror[39m: [31muncaughtException: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31mError: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31m    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1211:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:22:34)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
+2025-09-09 11:11:07:117 [31merror[39m: [31muncaughtException: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31mError: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31m    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1211:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:22:34)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
+2025-09-09 11:12:23:1223 [31merror[39m: [31muncaughtException: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31mError: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31m    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1211:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:22:34)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
+2025-09-09 11:13:19:1319 [31merror[39m: [31muncaughtException: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31mError: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31m    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1211:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:22:34)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
+2025-09-09 11:14:43:1443 [31merror[39m: [31muncaughtException: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31mError: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31m    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1211:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:22:34)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
+2025-09-09 11:15:26:1526 [31merror[39m: [31muncaughtException: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31mError: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31m    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1211:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:22:34)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
+2025-09-09 11:24:52:2452 [31merror[39m: [31muncaughtException: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31mError: Cannot find module './routes/contributorGraphQL'[39m
+[31mRequire stack:[39m
+[31m- C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js[39m
+[31m    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)[39m
+[31m    at Function._load (node:internal/modules/cjs/loader:1211:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:322:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1487:12)[39m
+[31m    at require (node:internal/modules/helpers:135:16)[39m
+[31m    at Object.<anonymous> (C:\Users\IzTech-OTbaileh\Desktop\kilo\server\index.js:22:34)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1730:14)[39m
